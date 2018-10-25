@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './App.css';
 
-import logo from './logo.svg';
 import WishList from "../WishList/WishList";
 import { User, Group } from "../../models/Group";
 
@@ -29,7 +28,6 @@ class App extends React.Component<IAppProps, {selectedUser: typeof User.Type | u
 		return (
 			<div className="App">
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
 					<h1 className="App-title">WishList</h1>
 				</header>
 				<div>
