@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WishList Tests:  add item to wishlist 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "image": "https://github.com/mobxjs/mobx-state-tree/raw/master/docs/mobx-state-tree-logo-gradient.svg?sanitize=true",
+      "name": "TEST_NAME",
+      "price": 26.34,
+    },
+  ],
+}
+`;
+
+exports[`WishList Tests:  add item to wishlist 2`] = `
+Object {
+  "item": Array [
+    Object {
+      "image": "https://github.com/mobxjs/mobx-state-tree/raw/master/docs/mobx-state-tree-logo-gradient.svg?sanitize=true",
+      "name": "TEST_NAME",
+      "price": 26.34,
+    },
+  ],
+  "list": Array [
+    Object {
+      "items": Array [
+        Object {
+          "image": "https://github.com/mobxjs/mobx-state-tree/raw/master/docs/mobx-state-tree-logo-gradient.svg?sanitize=true",
+          "name": "Chronicles",
+          "price": 26.34,
+        },
+      ],
+    },
+    Object {
+      "items": Array [
+        Object {
+          "image": "https://github.com/mobxjs/mobx-state-tree/raw/master/docs/mobx-state-tree-logo-gradient.svg?sanitize=true",
+          "name": "TEST_NAME",
+          "price": 26.34,
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`WishList Tests:  add item to wishlist 3`] = `
+Object {
+  "item": Array [
+    Object {
+      "op": "replace",
+      "path": "/name",
+      "value": "TEST_NAME",
+    },
+  ],
+  "list": Array [
+    Object {
+      "op": "add",
+      "path": "/items/0",
+      "value": Object {
+        "image": "https://github.com/mobxjs/mobx-state-tree/raw/master/docs/mobx-state-tree-logo-gradient.svg?sanitize=true",
+        "name": "Chronicles",
+        "price": 26.34,
+      },
+    },
+    Object {
+      "op": "replace",
+      "path": "/items/0/name",
+      "value": "TEST_NAME",
+    },
+  ],
+}
+`;
